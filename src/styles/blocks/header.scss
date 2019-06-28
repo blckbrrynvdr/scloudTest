@@ -1,7 +1,133 @@
 .header {
-  color: $main-color;
+  background-color: #fff;
+  padding: 11px 0;
+  color: $black-text;
+  min-height: rem(122px);
+  display: flex;
 }
 
-.new {
+.header__container {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__group {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+  font-size: rem(18px);
+}
+
+.header__phone {
+  @include font-bold;
+  font-size: rem(20px);
+  color: inherit;
+  margin-right: rem(19px);
+}
+
+.header__menu-link {
+  color: inherit;
+}
+
+.header__menu-item {
+  margin-right: rem(29px);
+}
+
+.header__btn-personal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: rem(35px);
+  padding: 0 13px;
+  background-color: $lighten-gray;
+  color: inherit;
+  border-radius: 6px;
+  margin-right: rem(11px);
+  &:before {
+    content:'';
+    width: rem(14px); 
+    height: rem(14px);
+    margin-right: rem(8px);
+    background: url('../images/icons/personal-account.png') center center / contain no-repeat;
+  }
+}
+.header__btn-1c {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: rem(37px);
+  padding: 0 15px;
+  background-color: $orange;
+  color: #fff;
+  border-radius: 6px;
+  &:before {
+    content:'';
+    width: rem(16px); 
+    height: rem(14px);
+    margin-right: rem(15px);
+    background: url('../images/icons/download.png') center center / contain no-repeat;
+  }
+}
+.header__transparent-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  transition: color .3s ease-out;
+  margin-right: rem(17px);
+  font-size: rem(15px);
+  &:before {
+    content:'';
+    width: rem(19px); 
+    height: rem(18px);
+    margin-right: rem(7px);
+    background: center center / contain no-repeat;
+  }
+  &:hover {
+    color: orange;
+  }
+  &--director {
+    &:before {
+      background-image: url('../images/icons/mailto.png');
+    }
+  }
+  &--support {
+    &:before {
+      background-image: url('../images/icons/support.png');
+    }
+  }
+}
+
+.header__search-form {
+  position: relative;
+}
+
+.header__search-input {
+  border-radius: 6px;
+  padding: rem(7px) rem(11px);
+  background-color: $lighten-gray;
+  border: none;
+  width: rem(32px);
+}
+
+.header__search-submit {
+  font-size: 0px;
+  width: rem(15px);
+  height: rem(15px);
+  background: url('../images/icons/search.png') center center / contain no-repeat;
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
 }

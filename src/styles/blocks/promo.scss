@@ -1,0 +1,67 @@
+.promo {
+  position: relative;
+  background-color: #f4ebde;
+  overflow: hidden;
+  padding-bottom: rem(160px);
+  padding-top: rem(67px);
+  &:after {
+    content: '';
+    width: 104%;
+    height: 160px;
+    background-color: #f8f9f6;
+    bottom: -80px;
+    left: -2%;
+    display: block;
+    position: absolute;
+    z-index: 53;
+    border-radius: 66%;
+  }
+}
+
+.promo__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo__title {
+  margin-bottom: rem(34px);
+}
+
+.promo__list {
+  font-size: rem(24px);
+  margin-bottom: rem(50px);
+}
+
+.promo__list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(26px);
+  &:before {
+    content: '';
+    width: rem(18px);
+    height: rem(24px);
+    background: url('../images/icons/done-orange.png') center center / contain no-repeat;
+    margin-right: rem(26px);
+  }
+}
+
+.promo__video {
+  width: 47%;
+  position: relative;
+}
+
+.promo__video-button {
+  position: absolute;
+  top: rem(98px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: rem(98px);
+  height: rem(98px);
+  background: url("../images/icons/play-big.png") center center / contain no-repeat;
+  opacity: .5;
+  transition: opacity .3s ease-out;
+  &:hover {
+    opacity: 1;
+  }
+}

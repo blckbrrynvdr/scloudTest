@@ -6,7 +6,7 @@ const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
 const sassGlob = require('gulp-sass-glob');
 const autoprefixer = require('gulp-autoprefixer');
-const px2rem = require('gulp-smile-px2rem');
+// const px2rem = require('gulp-smile-px2rem');
 const gcmq = require('gulp-group-css-media-queries');
 const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
@@ -41,6 +41,12 @@ task("copy:fonts", () => {
     .pipe(reload({ stream: true }));
 });
 
+task("copy:images", () => {
+  return src([`${SRC_PATH}/images/**/*.*`,`!${SRC_PATH}/images/svg/*.*`])
+    .pipe(dest(`${DIST_PATH}/images`))
+    .pipe(reload({ stream: true }));
+});
+
 // const styles = [
 //   'node_modules/normalize.css/normalize.css',
 //   'src/styles/main.scss'
@@ -52,7 +58,7 @@ task("styles", () => {
     .pipe(concat("main.min.scss"))
     .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
-    .pipe(px2rem())
+    // .pipe(px2rem())
     .pipe(gulpif(env === 'dev',
       autoprefixer({
         overrideBrowserslist: ['last 2 versions'],
@@ -124,7 +130,7 @@ task('watch', () => {
 task("default",
   series(
     "clean",
-    parallel("copy:html", "copy:fonts", "styles", "scripts", "icons"),
+    parallel("copy:html", "copy:fonts", "copy:images", "styles", "scripts", "icons"),
     parallel("watch", "server")
   )
 );
@@ -132,6 +138,6 @@ task("default",
 task(
   "build",
   series("clean",
-  parallel("copy:html", "copy:fonts", "styles", "scripts", "icons")
+  parallel("copy:html", "copy:fonts", "copy:images", "styles", "scripts", "icons")
   )
 );
