@@ -20,34 +20,53 @@
             <a href="#" class="header__btn-personal">Личный кабинет</a>
             <a href="#" class="header__btn-1c">Доступ в 1С</a>
           </div>
+          <div class="hamburger hamburger--squeeze">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
         </div>
         <div class="header__row">
           <nav class="header__nav">
             <ul class="header__menu">
               <li class="header__menu-item"><a href="#" class="header__menu-link">Тарифы</a></li>
               <li class="header__menu-item"><a href="#" class="header__menu-link">Партнерам</a></li>
-              <li class="header__menu-item"><a href="#" class="header__menu-link">База знаний</a></li>
+              <li class="header__menu-item"><a href="#" class="header__menu-link header__menu-link--submenu">База знаний</a></li>
               <li class="header__menu-item"><a href="#" class="header__menu-link">О нас</a></li>
               <li class="header__menu-item"><a href="#" class="header__menu-link">Отзывы</a></li>
             </ul>
           </nav>
-          <div class="header__group">
+          <div class="header__group header__group--down">
             <a href="" class="header__transparent-btn header__transparent-btn--director">Написать директору</a>
             <a href="" class="header__transparent-btn header__transparent-btn--support">Техподдержка</a>
             <form action="" class="header__search-form">
-              <input type="text" class="header__search-input">
+              <input type="text" class="header__search-input" placeholder="Поиск">
               <input type="submit" class="header__search-submit">
             </form>
+            <form action="" class="header__languages">
+              <select name="" id="" class="header__language-select">
+                <option value="" class="header__language-option">Ru</option>
+                <option value="" class="header__language-option">En</option>
+              </select>
+            </form>
           </div>
+        </div>
+      </div>
+      <div class="header__submenu">
+        <div class="container">
+          <ul class="header__submenu-list">
+            <li class="header__submenu-item"><a href="#" class="header__submenu-link">Инструкции</a></li>
+            <li class="header__submenu-item"><a href="#" class="header__submenu-link">Самоучитель 1С</a></li>
+            <li class="header__submenu-item"><a href="#" class="header__submenu-link">Финансовый блог</a></li>
+            <li class="header__submenu-item"><a href="#" class="header__submenu-link">Полезные инструменты</a></li>
+          </ul>
         </div>
       </div>
     </header>
     <section class="promo">
       <div class="container promo__container">
         <div class="promo__desc">
-          <div class="promo__title">
-            <h1>1C в облаке с компанией Scloud</h1>
-          </div>
+          <div class="promo__title"><h1>1C в облаке с компанией Scloud</h1></div>
           <ul class="promo__list">
             <li class="promo__list-item">Возможность перенести вашу базу;</li>
             <li class="promo__list-item">Вам не понадобится сервер и ИТС;</li>
@@ -59,15 +78,13 @@
         </div>
         <div class="promo__video">
           <img src="images/notebook.png" alt="laptop" class="img-fluid">
-          <a href="#" class="promo__video-button"></a>
+          <a data-fancybox href="https://www.youtube.com/watch?time_continue=3&v=6WkNGyKBElE" class="promo__video-button"></a>
         </div>
       </div>
     </section>
     <section class="best">
       <div class="container">
-        <div class="best__main-title">
-          <h2>Сервис 1С в облаке номер 1 в России.*</h2>
-        </div>
+        <div class="best__main-title section__title"><h2>Сервис 1С в облаке номер 1 в России.*</h2></div>
         <div class="best__main-subtitle">Почему более 15 000 пользователей выбирают Scloud?</div>
         <div class="best__cards-wrapper">
           <div class="best__card best__card--small">
@@ -93,9 +110,7 @@
     </section>
     <section class="proposal">
       <div class="container">
-        <div class="proposal__main-title">
-          <h2>Мы предлагаем</h2>
-        </div>
+        <div class="proposal__main-title section__title"><h2>Мы предлагаем</h2></div>
         <div class="proposal__items">
           <div class="proposal__item">
             <div class="proposal__item-desc">
@@ -117,133 +132,336 @@
               <div class="proposal__item-title">1С Отчетность</div>
               <div class="proposal__item-text">
                 <p>Сдавайте отчетность напрямую из 1С без установки дополнительных программ и флешки с электронной подписью.</p>
-                <p>Отправить отчетность можно даже со смартфона в основные контролирующие организации: ФНС, ПФР, ФСС, Росстат, Росалкогольрегулирование.
-                  Подключим, настроим, проконсультируем!</p>
+                <p>Отправить отчетность можно даже со смартфона в основные контролирующие организации: ФНС, ПФР, ФСС, Росстат, Росалкогольрегулирование. Подключим, настроим, проконсультируем!</p>
+              </div>
+            </div>
+          </div>
+          <div class="proposal__item">
+            <div class="proposal__item-desc">
+              <div class="proposal__item-title">Быстрая и бесперебойная работа без нервов</div>
+              <div class="proposal__item-text">
+                <p>Даже в период отчетности облачная 1С работает без сбоев, зависаний и ошибок.</p>
+                <p>Наши сервера выдерживают большие нагрузки, и все Ваши данные находятся под надежной защитой. </p>
+                <p> Засчет этого Вы не тратите свои нервы и дополнительные ресурсы на работу.</p>
+              </div>
+            </div>
+            <div class="proposal__item-pictures">
+              <img src="images/girl.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tariffs">
+      <div class="container">
+        <div class="tariffs__main-title section__title"><h2>Наши тарифы</h2></div>
+        <div class="tariffs__main-subtitle">Взять 1С в аренду проще, надежнее и дешевле, чем купить. Цена облачной 1С по карману любой компании. </div>
+        <div class="tariffs__cards-wrapper">
+          <div class="tariffs__card">
+            <div class="tariffs__card-head">
+              <div class="tariffs__card-title">Тариф «Оптимальный»</div>
+              <div class="tariffs__card-price">от <span>1020</span> Р/мес</div>
+            </div>
+            <ul class="tariffs__card-features">
+              <li class="tariffs__card-feature tariffs__card-feature--done-green">Можно изменять и дорабатывать</li>
+              <li class="tariffs__card-feature tariffs__card-feature--planet-green">Доступ к 1С через удаленный рабочий стол, браузер или тонкий клиент</li>
+            </ul>
+            <div class="tariffs__card-config">
+              <div class="tariffs__config-title">Конфигурации</div>
+              <ul class="tariffs__list">
+                <li class="tariffs__list-item">1С: Бухгалтерия ПРОФ/КОРП</li>
+                <li class="tariffs__list-item">1С: Комплексная автоматизация</li>
+                <li class="tariffs__list-item">1С: Управление торговлей</li>
+                <li class="tariffs__list-item">1С: Розница</li>
+                <li class="tariffs__list-item">1С: Управление нашей фирмой</li>
+                <li class="tariffs__list-item">1С: Документооборот ПРОФ</li>
+                <li class="tariffs__list-item">1С: Зарплата и управление персоналом</li>
+                <li class="tariffs__list-item">1С: Управление сервисным центром</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tariffs__card tariffs__card--gray">
+            <div class="tariffs__card-head">
+              <div class="tariffs__card-title">Тариф «Веб»</div>
+              <div class="tariffs__card-price"><span>700</span> Р/мес</div>
+            </div>
+            <ul class="tariffs__card-features">
+              <li class="tariffs__card-feature tariffs__card-feature--done-gray">Нельзя изменять и дорабатывать</li>
+              <li class="tariffs__card-feature tariffs__card-feature--planet-gray">Доступ к 1С только через браузер или тонкий клиент</li>
+            </ul>
+            <div class="tariffs__card-config">
+              <div class="tariffs__config-title">Конфигурации</div>
+              <ul class="tariffs__list tariffs__list--one-col">
+                <li class="tariffs__list-item">1С: Бухгалтерия ПРОФ/КОРП</li>
+                <li class="tariffs__list-item">1С: Управление торговлей</li>
+                <li class="tariffs__list-item">1С: Управление нашей фирмой</li>
+                <li class="tariffs__list-item">1С: Зарплата и управление персоналом</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tariffs__promo">
+          <div class="tariffs__promo-left">
+            <div class="tariffs__promo-icon"><img src="../images/icons/discoount.png" alt="" class="img-fluid"></div>
+            <div class="tariffs__promo-title">Опробуйте наш сервис и получите скидку 15% на первый платеж</div>
+          </div>
+          <div class="tariffs__promo-button"><a href="" class="btn orange-btn orange-btn--md">Попробовать</a></div>
+        </div>
+      </div>
+    </section>
+    <section class="how">
+      <div class="container">
+        <div class="how__main-title section__title">
+          <h2>Как в 1С в облаке помогает клиентам?</h2>
+        </div>
+        <div class="how__content">
+          <ul class="how__list">
+            <li class="how__item">
+              <div class="how__item-icon"><img src="../images/icons/calculated.png" alt="" class="img-fluid"></div>
+              <div class="how__item-text">Бухгалтерам</div>
+            </li>
+            <li class="how__item">
+              <div class="how__item-icon"><img src="../images/icons/idea.png" alt="" class="img-fluid"></div>
+              <div class="how__item-text">Стартапам/ малому бизнесу</div>
+            </li>
+            <li class="how__item active">
+              <div class="how__item-icon"><img src="../images/icons/shop.png" alt="" class="img-fluid"></div>
+              <div class="how__item-text">Интернет магазинам</div>
+            </li>
+            <li class="how__item">
+              <div class="how__item-icon"><img src="../images/icons/remote.png" alt="" class="img-fluid"></div>
+              <div class="how__item-text">Удаленным офисам</div>
+            </li>
+            <li class="how__item">
+              <div class="how__item-icon"><img src="../images/icons/deal.png" alt="" class="img-fluid"></div>
+              <div class="how__item-text">Торговым компаниям</div>
+            </li>
+          </ul>
+          <div class="how__desc">
+            <div class="how__desc-item">
+              <div class="how__desc-title">Решения:</div>
+              <ul class="how__desc-list">
+                <li class="how__desc-point">Автоматизация продаж;</li>
+                <li class="how__desc-point">Автоматизация према заявок с сайта, настройка сайта в один клик;</li>
+                <li class="how__desc-point">Планирование производства производства;</li>
+                <li class="how__desc-point">Воронка продаж, отчет по базе клиентов, отчеты по работе менеджером</li>
+              </ul>
+            </div>
+            <div class="how__desc-item">
+              <div class="how__desc-title">Решения:</div>
+              <ul class="how__desc-list">
+                <li class="how__desc-point">Синхронизация с Google контактами, отбор клиентов, предварительная калькуляция заказа, SMS-рассылки;</li>
+                <li class="how__desc-point">Автоматизация према заявок с сайта, настройка сайта в один клик;</li>
+                <li class="how__desc-point">Планирование производства производства;</li>
+                <li class="how__desc-point">Воронка продаж, отчет по базе клиентов, отчеты по работе менеджером</li>
+              </ul>
+            </div>
+            <div class="how__desc-item active">
+              <div class="how__desc-title">Решения:</div>
+              <ul class="how__desc-list">
+                <li class="how__desc-point">Синхронизация с Google контактами, отбор клиентов, предварительная калькуляция заказа, SMS-рассылки;</li>
+                <li class="how__desc-point">Автоматизация продаж;</li>
+                <li class="how__desc-point">Автоматизация према заявок с сайта, настройка сайта в один клик;</li>
+                <li class="how__desc-point">Планирование производства производства;</li>
+                <li class="how__desc-point">Воронка продаж, отчет по базе клиентов, отчеты по работе менеджером</li>
+              </ul>
+            </div>
+            <div class="how__desc-item">
+              <div class="how__desc-title">Решения:</div>
+              <ul class="how__desc-list">
+                <li class="how__desc-point">Синхронизация с Google контактами, отбор клиентов, предварительная калькуляция заказа, SMS-рассылки;</li>
+                <li class="how__desc-point">Автоматизация продаж;</li>
+                <li class="how__desc-point">Автоматизация према заявок с сайта, настройка сайта в один клик;</li>
+                <li class="how__desc-point">Воронка продаж, отчет по базе клиентов, отчеты по работе менеджером</li>
+              </ul>
+            </div>
+            <div class="how__desc-item">
+              <div class="how__desc-title">Решения:</div>
+              <ul class="how__desc-list">
+                <li class="how__desc-point">Синхронизация с Google контактами, отбор клиентов, предварительная калькуляция заказа, SMS-рассылки;</li>
+                <li class="how__desc-point">Автоматизация продаж;</li>
+                <li class="how__desc-point">Автоматизация према заявок с сайта, настройка сайта в один клик;</li>
+                <li class="how__desc-point">Планирование производства производства;</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="now">
+      <div class="container">
+        <div class="now__main-title section__title"><h3>Начните работать в 1С прямо сейчас</h3></div>
+        <form  class="now__form">
+          <div class="now__inputs">
+            <div class="now__input-wrapper">
+              <input type="text" class="now__input" placeholder="ФИО">
+            </div>
+            <div class="now__input-wrapper">
+              <input type="text" class="now__input" placeholder="Телефон">
+            </div>
+            <div class="now__input-wrapper">
+              <input type="text" class="now__input" placeholder="E-mail">
+            </div>
+          </div>
+          <div class="now__button">
+            <input type="submit" class="now__submit btn orange-btn orange-btn--now" value="Попробовать бесплатно">
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="comments">
+      <div class="container">
+        <div class="comments__maint-title section__title"><h3>Отзывы</h3></div>
+        <div class="comments__content-wrapper">
+          <div class="comments__left comments-left">
+            <ul class="comments-left-dots">
+              <li class="comments-left-dot"></li>
+            </ul>
+            <div class="comments-left-indexes">
+              отзыв <span class="comments-left-current">1</span>/ <span class="comments-left-length">10</span>
+            </div>
+            <div class="comments-left-slider">
+              <div class="comments-left-item">
+                <div class="comments-left-head">
+                  <div class="comments-left-avatar"><img src="images/guy.jpg" alt="" class="img-fluid"></div>
+                  <div class="comments-left-titles">
+                    <div class="comments-left-user">
+                      <div class="comments-left-username">АЛЕКСЕЙ ЛОКОНЦЕВ</div>
+                      <a data-fancybox href="https://www.youtube.com/watch?v=puAvUIMbZ3w&t" class="comments-left-play"></a>
+                    </div>
+                    <div class="comments-left-link">
+                      <div class="comments-left-company">TopGun</div>
+                      <a href="#" class="comments-left-url">topgunbarbershop.ru</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="comments-left-text">
+                  <p>Бухгалтерия моя сидит, скажем так, как наркоманы на вашем продукте, которая называется Scloud. Мы выбирали долго. Год мы тратили на выбор реально продукта. И сейчас мы пользуемся вами, и я хочу сказать, что это идеальный продукт, потому что моя бухгалтерия меня не спрашивает ни о чем. У них нет никаких проблем, понимаете, с программным обеспечением. И быстро приходит отчетность, никаких сбоев с облаком не бывает.</p>
+                  <p>Поэтому я хочу сказать, что вы молодцы! Хорошо, что вы есть! Хорошо, что вы помогаете моему бизнесу расти с облачными технологиями. И это прикольно, потому что я сам всегда за все передовые технологии. И я хочу сказать вам огромное спасибо.</p>
+                </div>
+              </div>
+              <div class="comments-left-item">
+                <div class="comments-left-head">
+                  <div class="comments-left-avatar"><img src="images/guy.jpg" alt="" class="img-fluid"></div>
+                  <div class="comments-left-titles">
+                    <div class="comments-left-user">
+                      <div class="comments-left-username">АЛЕКСЕЙ ЛОКОНЦЕВ</div>
+                      <a data-fancybox href="https://www.youtube.com/watch?v=puAvUIMbZ3w&t" class="comments-left-play"></a>
+                    </div>
+                    <div class="comments-left-link">
+                      <div class="comments-left-company">TopGun</div>
+                      <a href="#" class="comments-left-url">topgunbarbershop.ru</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="comments-left-text">
+                  <p>Бухгалтерия моя сидит, скажем так, как наркоманы на вашем продукте, которая называется Scloud. Мы выбирали долго. Год мы тратили на выбор реально продукта. И сейчас мы пользуемся вами, и я хочу сказать, что это идеальный продукт, потому что моя бухгалтерия меня не спрашивает ни о чем. У них нет никаких проблем, понимаете, с программным обеспечением. И быстро приходит отчетность, никаких сбоев с облаком не бывает.</p>
+                  <p>Поэтому я хочу сказать, что вы молодцы! Хорошо, что вы есть! Хорошо, что вы помогаете моему бизнесу расти с облачными технологиями. И это прикольно, потому что я сам всегда за все передовые технологии. И я хочу сказать вам огромное спасибо.</p>
+                </div>
+              </div>
+              <div class="comments-left-item">
+                <div class="comments-left-head">
+                  <div class="comments-left-avatar"><img src="images/guy.jpg" alt="" class="img-fluid"></div>
+                  <div class="comments-left-titles">
+                    <div class="comments-left-user">
+                      <div class="comments-left-username">АЛЕКСЕЙ ЛОКОНЦЕВ</div>
+                      <a data-fancybox href="https://www.youtube.com/watch?v=puAvUIMbZ3w&t"  class="comments-left-play"></a>
+                    </div>
+                    <div class="comments-left-link">
+                      <div class="comments-left-company">TopGun</div>
+                      <a href="#" class="comments-left-url">topgunbarbershop.ru</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="comments-left-text">
+                  <p>Бухгалтерия моя сидит, скажем так, как наркоманы на вашем продукте, которая называется Scloud. Мы выбирали долго. Год мы тратили на выбор реально продукта. И сейчас мы пользуемся вами, и я хочу сказать, что это идеальный продукт, потому что моя бухгалтерия меня не спрашивает ни о чем. У них нет никаких проблем, понимаете, с программным обеспечением. И быстро приходит отчетность, никаких сбоев с облаком не бывает.</p>
+                  <p>Поэтому я хочу сказать, что вы молодцы! Хорошо, что вы есть! Хорошо, что вы помогаете моему бизнесу расти с облачными технологиями. И это прикольно, потому что я сам всегда за все передовые технологии. И я хочу сказать вам огромное спасибо.</p>
                 </div>
               </div>
             </div>
-            <div class="proposal__item">
-              <div class="proposal__item-desc">
-                <div class="proposal__item-title">Быстрая и бесперебойная работа без нервов</div>
-                <div class="proposal__item-text">
-                  <p>Даже в период отчетности облачная 1С работает без сбоев, зависаний и ошибок.</p>
-                  <p>Наши сервера выдерживают большие нагрузки, и все Ваши данные находятся под надежной защитой. </p>
-                  <p> Засчет этого Вы не тратите свои нервы и дополнительные ресурсы на работу.</p>
-                </div>
+          </div>
+          <div class="comments__right comments-right">
+            <div class="comments-right__head">
+              <div class="comments-right__head-title">Живая лента</div>
+              <div class="comments-right__head-text">24 часа в сутки к нам обращаются пользователи. После выполнения заявки они могут оценить работу специалиста. Мы открыто публикуем все оценки здесь:</div>
+            </div>
+            <div class="comments-right__slider">
+              <div class="comments-right__item">
+                <div class="comments-right__item-user">Валентина, <span class="comments-right__item-date">31.03.2018</span></div>
+                <div class="comments-right__item-text">Спасибо, вы как всегда лучшие!</div>
               </div>
-              <div class="proposal__item-pictures">
-                <img src="images/girl.png" alt="" class="img-fluid">
+              <div class="comments-right__item">
+                <div class="comments-right__item-user">Марина, <span class="comments-right__item-date">31.03.2018</span></div>
+                <div class="comments-right__item-text">Спасибо за помощь, все очень доступно и понятно, и быстро решаются все вопросы</div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="tariffs">
-        <div class="container">
-          <div class="tariffs__main-title">
-            <h2>Наши тарифы</h2>
-          </div>
-          <div class="tariffs__main-subtitle">Взять 1С в аренду проще, надежнее и дешевле, чем купить. Цена облачной 1С по карману любой компании. </div>
-          <div class="tariffs__cards-wrapper">
-            <div class="tariffs__card">
-              <div class="tariffs__card-head">
-                <div class="tariffs__card-title">Тариф «Оптимальный»</div>
-                <div class="tariffs__card-price">от <span>1020</span> Р/мес</div>
-              </div>
-              <ul class="tariffs__card-features">
-                <li class="tariffs__card-feature tariffs__card-feature--done-green">Можно изменять и дорабатывать</li>
-                <li class="tariffs__card-feature tariffs__card-feature--planet-green">Доступ к 1С через удаленный рабочий стол, браузер 
-                  или тонкий клиент</li>
-                </ul>
-                <div class="tariffs__card-config">
-                  <div class="tariffs__config-title">Конфигурации</div>
-                  <ul class="tariffs__list">
-                    <li class="tariffs__list-item">1С: Бухгалтерия ПРОФ/КОРП</li>
-                    <li class="tariffs__list-item">1С: Комплексная автоматизация</li>
-                    <li class="tariffs__list-item">1С: Управление торговлей</li>
-                    <li class="tariffs__list-item">1С: Розница</li>
-                    <li class="tariffs__list-item">1С: Управление нашей фирмой</li>
-                    <li class="tariffs__list-item">1С: Документооборот ПРОФ</li>
-                    <li class="tariffs__list-item">1С: Зарплата и управление персоналом</li>
-                    <li class="tariffs__list-item">1С: Управление сервисным центром</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="tariffs__card">
-                <div class="tariffs__card-head">
-                  <div class="tariffs__card-title">Тариф «Оптимальный»</div>
-                  <div class="tariffs__card-price">от <span>1020</span> Р/мес</div>
-                </div>
-                <ul class="tariffs__card-features">
-                  <li class="tariffs__card-feature">Можно изменять и дорабатывать</li>
-                  <li class="tariffs__card-feature">Доступ к 1С через удаленный рабочий стол, браузер 
-                    или тонкий клиент</li>
-                  </ul>
-                  <div class="tariffs__card-config">
-                    <div class="tariffs__config-title">Конфигурации</div>
-                    <ul class="tariffs__list tariffs__list--one-col">
-                      <li class="tariffs__list-item">1С: Бухгалтерия ПРОФ/КОРП</li>
-                      <li class="tariffs__list-item">1С: Управление торговлей</li>
-                      <li class="tariffs__list-item">1С: Управление нашей фирмой</li>
-                      <li class="tariffs__list-item">1С: Зарплата и управление персоналом</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="tariffs__promo">
-                <div class="tariffs__promo-left">
-                  <div class="tariffs__promo-icon"><img src="../images/icons/discoount.png" alt="" class="img-fluid"></div>
-                  <div class="tariffs__promo-title">Опробуйте наш сервис и получите скидку 15% на первый платеж</div>
-                </div>
-                <div class="tariffs__promo-button"><a href="" class="btn orange-btn orange-btn--md">Попробовать</a></div>
-              </div>
-            </div>
-          </section>
-          <section class="how">
-            <div class="container">
-              <div class="how__main-title">
-                <h2>Как в 1С в облаке помогает клиентам?</h2>
-              </div>
-              <div class="how__content">
-                <ul class="how__list">
-                  <li class="how__item">
-                    <div class="how__item-icon"><img src="../images/icons/calculated.png" alt="" class="img-fluid"></div>
-                    <div class="how__item-text">Бухгалтерам</div>
-                  </li>
-                  <li class="how__item">
-                    <div class="how__item-icon"><img src="../images/icons/idea.png" alt="" class="img-fluid"></div>
-                    <div class="how__item-text">Стартапам/ малому бизнесу</div>
-                  </li>
-                  <li class="how__item">
-                    <div class="how__item-icon"><img src="../images/icons/shop.png" alt="" class="img-fluid"></div>
-                    <div class="how__item-text">Интернет магазинам</div>
-                  </li>
-                  <li class="how__item">
-                    <div class="how__item-icon"><img src="../images/icons/remote.png" alt="" class="img-fluid"></div>
-                    <div class="how__item-text">Удаленным офисам</div>
-                  </li>
-                  <li class="how__item">
-                    <div class="how__item-icon"><img src="../images/icons/deal.png" alt="" class="img-fluid"></div>
-                    <div class="how__item-text">Торговым компаниям</div>
-                  </li>
-                </ul>
-                <div class="how__desc">
-                  <div class="how__desc-item">
-                    <div class="how__desc-title">Решения:</div>
-                    <ul class="how__desc-list">
-                      <li class="how__desc-point">Синхронизация с Google контактами, отбор клиентов, предварительная калькуляция заказа, SMS-рассылки;</li>
-                      <li class="how__desc-point">Автоматизация продаж;</li>
-                      <li class="how__desc-point">Автоматизация према заявок с сайта, настройка сайта в один клик;</li>
-                      <li class="how__desc-point">Планирование производства производства;</li>
-                      <li class="how__desc-point">Воронка продаж, отчет по базе клиентов, отчеты по работе менеджером</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__row">
+        <div class="container footer__container footer__container--menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: Отчетность</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: ОФД</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: Контарагент</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: Розница</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: Управление торговлей</a></li>
+          </ul>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: Автосервис</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: СтартЭДО</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1 СПАРК Рикси</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: Бухгалтерия</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: Документооборот</a></li>
+          </ul>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: Салон Красоты</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: Общепит 8</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: Зарплата и управление</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: Управление нашей фирмой</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: Комплексная автоматизация</a></li>
+          </ul>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: Учет в управляющих компаниях</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: Аренда и управление недвижимостью</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: Бухгалтерия сельхозпредприятия</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">1С: CRM ПРОФ</a></li>
+          </ul>
         </div>
         
-        <script src="js/main.min.js"></script>
-      </body>
-      </html>
+      </div>
+      <div class="footer__row footer__row--no-border">
+        <div class="container footer__container footer__container--contacts">
+          <div class="footer__contacts footer__contacts--left">
+            <div class="footer__logo company-logo">
+              <img src="images/company-logo-gray.png" alt="scloud.ru" class="img-fluid">
+            </div>
+            <div class="footer__contact">
+              <address class="footer__address">г. Москва, пр-т Вернадского, д. 29</address>
+              <a href="tel:88005559115" class="footer__phone">8 800 555-91-15</a>
+            </div>
+          </div>
+          <div class="footer__contacts footer__contacts--right">
+            <ul class="footer__socials-list">
+              <li class="footer__socials-item"><a href="#" class="footer__socials-link"><svg class="footer__socials-icon"><use xlink:href="images/icons/sprite.svg#socials-twit"></use></svg></a></li>
+              <li class="footer__socials-item"><a href="#" class="footer__socials-link"><svg class="footer__socials-icon"><use xlink:href="images/icons/sprite.svg#socials-vk"></use></svg></a></li>
+              <li class="footer__socials-item"><a href="#" class="footer__socials-link"><svg class="footer__socials-icon"><use xlink:href="images/icons/sprite.svg#socials-fb"></use></svg></a></li>
+              <li class="footer__socials-item"><a href="#" class="footer__socials-link"><svg class="footer__socials-icon"><use xlink:href="images/icons/sprite.svg#socials-youtube"></use></svg></a></li>
+            </ul>
+            <a href="#" class="footer__appstore"><img src="images/app-store.png" alt="" class="img-fluid"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__row footer__row--down">
+        <div class="container footer__container footer__container--down">
+          <div class="footer__down-desc">* По данным исследования портала clouderp.ru за 2016 год в рейтинге онлайн-бухгалтерий среди продуктов, предоставляемых на платформе 1С</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="js/main.min.js"></script>
+</body>
+</html>

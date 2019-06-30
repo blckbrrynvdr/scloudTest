@@ -1,0 +1,73 @@
+.comments-right {
+  width: 46%;
+  padding-right: 20px;
+  @include phones {
+    width: 90%;
+    padding-right: 0;
+  }
+}
+
+.comments-right__head {
+  margin-bottom: rem(26px);
+}
+
+.comments-right__head-title {
+  @include font-bold;
+  font-size: rem(20px);
+  margin-bottom: rem(17px);
+}
+
+.comments-right__head-text {
+  line-height: 1.38;
+}
+
+.comments-right__slider {
+  position: relative;
+  .owl-dots {
+    display: none;
+  }
+  .owl-item {
+    padding: 2px;
+  }
+  .owl-prev, .owl-next {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-size: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 9px;
+    height: 14px;
+    background: center center / contain no-repeat;
+    cursor: pointer;
+    outline: 0;
+  }
+  .owl-prev {
+    left: -20px;
+    background-image: url('../images/icons/arrow-left-orange.png');
+  }
+  .owl-next {
+    right: -20px;
+    background-image: url('../images/icons/arrow-right-orange.png');
+  }
+}
+
+.comments-right__item {
+  padding: rem(23px) rem(20px);
+  background-color: #fff;
+  min-height: rem(145px);
+  box-shadow: 1.6px 2.5px 9px 0 rgba(0, 0, 0, 0.17);
+  border-radius: 4px;
+  @include tablets {
+    min-height: rem(160px);
+  }
+}
+
+.comments-right__item-user {
+  @include font-bold;
+  margin-bottom: rem(16px);
+}
+
+.comments-right__item-date {
+  @include font-regular;
+}

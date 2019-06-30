@@ -3,7 +3,6 @@
 }
 
 .best__main-title {
-  text-align: center;
   margin-bottom: rem(20px);
 }
 
@@ -17,6 +16,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .best__card {
@@ -25,11 +28,20 @@
   justify-content: center;
   align-items: center;
   background-color: #fff;
+  @include phones {
+    padding: rem(20px);
+  }
   &--small {
     width: 26%;
     height: rem(287px);
     border-radius: 10px;
     box-shadow: -1px 2.8px 7px 0 rgba(0, 0, 0, 0.16);
+    text-align: center;
+    @include tablets {
+      order: 2;
+      width: 100%;
+      margin-bottom: rem(20px);
+    }
   }
   &--big {
     width: 41%;
@@ -37,6 +49,11 @@
     border-radius: 20px;
     box-shadow: -1px 2.8px 21px 0 rgba(0, 0, 0, 0.16);
     padding: rem(20px) rem(37px);
+    @include tablets {
+      order: 1;
+      width: 100%;
+      margin-bottom: rem(20px);
+    }
     .best__card-title {
       font-size: rem(24px);
       margin-bottom: rem(12px);
@@ -46,6 +63,9 @@
 
 .best__card-picture {
   margin-bottom: rem(30px);
+  @include phones {
+    margin-bottom: rem(15px);
+  }
 }
 
 .best__card-title {
@@ -62,6 +82,7 @@
 .best__card-list {
   font-size: rem(17px);
   line-height: 1.53;
+  width: 100%;
 }
 
 .best__card-item {

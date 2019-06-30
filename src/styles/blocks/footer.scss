@@ -1,0 +1,146 @@
+.footer {
+  background-color: #fff;
+}
+
+.footer__row {
+  border-bottom: 2px solid $lighten-gray;
+  &--no-border {
+    border: none;
+  }
+  &--down {
+    background-color: $gray-bg;
+  }
+}
+
+.footer__container {
+  display: flex;
+  // justify-content: space-between;
+  &--menu {
+    padding: rem(40px) 0;
+    @include phones {
+      flex-wrap: wrap;
+    }
+  }
+  &--contacts {
+    padding: rem(26px) 0 rem(37px);
+    @include phones {
+      flex-direction: column;
+    }
+  }
+  &--down {
+    padding: rem(21px) 0 rem(27px);
+  }
+}
+
+.footer__menu-list {
+  flex:1;
+  font-size: rem(14px);
+  line-height: 1.71;
+  color: $gray-light-text;
+  @include phones {
+    flex-basis: 45%;
+    margin-bottom: rem(20px);
+  }
+}
+
+.footer__menu-link {
+  color: inherit;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  align-items: flex-end;
+  flex: 1;
+  &--left {
+    @include phones {
+      margin-bottom: rem(20px);
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  &--right {
+    justify-content: space-between;
+    @include phones {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.footer__logo {
+  max-width: rem(122px);
+  margin-right: rem(76px);
+  @include tablets {
+    margin-right: rem(20px);
+  }
+  @include phones {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__address {
+  font-size: rem(18px);
+  margin-bottom: 10px;
+  @include phones {
+    font-size: rem(25px);
+  }
+}
+
+.footer__phone {
+  @include font-bold;
+  font-size: rem(24px);
+  color: inherit;
+  @include phones {
+    font-size: rem(40px);
+  }
+}
+
+.footer__socials-list {
+  display: flex;
+  align-items: center;
+  @include phones {
+    margin-bottom: rem(20px);
+  }
+}
+
+.footer__socials-item {
+  margin-right: rem(12px);
+}
+
+.footer__socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(52px);
+  height: rem(52px);
+  border-radius: 50%;
+  border: 2px solid $gray-border;
+  padding: rem(12px);
+  transition: border .3s ease-out;
+  @include phones {
+  width: rem(70px);
+  height: rem(70px);
+  }
+  &:hover {
+    border: 2px solid $dark-gray;
+    .footer__socials-icon {
+      fill: $dark-gray;
+    }
+  }
+}
+
+.footer__socials-icon {
+  max-width: 100%;
+  max-height: 100%;
+  fill: $gray-border;
+  transition: fill .3s ease-out;
+}
+
+.footer__down-desc {
+  @include font-italic;
+  color: $gray-border;
+}

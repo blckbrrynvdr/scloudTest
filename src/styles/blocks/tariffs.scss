@@ -3,7 +3,6 @@
 }
 
 .tariffs__main-title {
-  text-align: center;
   margin-bottom: rem(24px);
 }
 
@@ -17,6 +16,9 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 22px;
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .tariffs__card {
@@ -26,8 +28,17 @@
   background-color: #fff;
   box-shadow: 0 0 0 0;
   transition: box-shadow .3s ease-out;
+  @include phones {
+    width: 100%;
+    margin-bottom: rem(20px);
+  }
   &:hover {
     box-shadow: 1.6px 2.5px 9px 0 rgba(0, 0, 0, 0.17);
+  }
+  &--gray {
+    .tariffs__card-head {
+      border-bottom: 4px solid $gray-border;
+    }
   }
 }
 
@@ -38,11 +49,17 @@
   border-bottom: 4px solid $green;
   margin-bottom: rem(27px);
   align-items: baseline;
+  @include tablets {
+    flex-direction: column;
+  }
 }
 
 .tariffs__card-title {
   @include font-bold;
   font-size: rem(30px);
+  @include tablets {
+    margin-bottom: rem(10px);
+  }
 }
 
 .tariffs__card-price {
@@ -50,6 +67,9 @@
   span {
     @include font-bold;
     font-size: rem(30px);
+  }
+  @include tablets {
+    margin-left: auto;
   }
 }
 
@@ -84,6 +104,16 @@
   &--planet-green {
     &:before {
       background-image: url('../images/icons/planet-green.png');
+    }
+  }
+  &--done-gray {
+    &:before {
+      background-image: url('../images/icons/cross-round.png');
+    }
+  }
+  &--planet-gray {
+    &:before {
+      background-image: url('../images/icons/planet-gray.png');
     }
   }
 }
@@ -132,11 +162,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include phones {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .tariffs__promo-left {
   display: flex;
   align-items: center;
+  @include phones {
+    flex-direction: column;
+    margin-bottom: rem(20px);
+  }
 }
 
 .tariffs__promo-icon {

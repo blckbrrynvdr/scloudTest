@@ -3,7 +3,6 @@
 }
 
 .proposal__main-title {
-  text-align: center;
   margin-bottom: rem(30px);
 }
 
@@ -15,46 +14,89 @@
   margin-bottom: rem(20px);
   border-radius: 10px;
   min-height: rem(328px);
+  @include tablets {
+    padding: rem(20px);
+  }
+  @include phones {
+    flex-direction: column;
+  }
   &:first-child {
     .proposal__item-desc {
       width: 50%;
       padding-top: rem(61px);
+      @include phones {
+        width: 100%;
+        padding: 0;
+      }
     }
     .proposal__item-pictures {
       padding-right: rem(66px);
       padding-top: rem(32px);
+      @include phones {
+        width: 100%;
+        padding: 0;
+      }
     }
   }
   &:nth-child(2) {
     padding-right: rem(75px);
+    @include phones {
+      padding-right: rem(20px);
+    }
     .proposal__item-desc {
       width: 60%;
       padding-top: rem(75px);
+      @include phones {
+        width: 100%;
+        padding: 0;
+      }
     }
     .proposal__item-pictures {
       margin-right: rem(61px);
       padding-top: rem(32px);
+      @include phones {
+        width: 100%;
+        padding: 0;
+      }
     }
   }
   &:last-child {
     padding-right: rem(105px);
+    @include phones {
+      padding-right: rem(20px);
+      padding-bottom: 0;
+    }
     .proposal__item-desc {
       width: 55%;
       padding-top: rem(66px);
+      @include phones {
+        width: 100%;
+        padding: 0;
+      }
     }
     .proposal__item-pictures {
       margin-right: rem(55px);
       padding-top: rem(32px);
+      @include phones {
+        width: 100%;
+        padding: 0;
+      }
     }
   }
 }
 
+.proposal__item-desc {
+  @include phones {
+    margin-bottom: rem(20px);
+  }
+}
 
 .proposal__item-pictures {
   text-align: center;
+  @include phones {
+    margin-bottom: rem(20px);
+  }
 }
-
-
 
 .proposal__item-title {
   @include font-bold;

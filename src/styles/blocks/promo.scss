@@ -3,7 +3,7 @@
   background-color: #f4ebde;
   overflow: hidden;
   padding-bottom: rem(160px);
-  padding-top: rem(67px);
+  padding-top: rem(193px);
   &:after {
     content: '';
     width: 104%;
@@ -13,7 +13,7 @@
     left: -2%;
     display: block;
     position: absolute;
-    z-index: 53;
+    z-index: 2;
     border-radius: 66%;
   }
 }
@@ -21,6 +21,11 @@
 .promo__container {
   display: flex;
   justify-content: space-between;
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .promo__title {
@@ -30,6 +35,18 @@
 .promo__list {
   font-size: rem(24px);
   margin-bottom: rem(50px);
+  @include phones {
+    text-align: left;
+  }
+}
+
+.promo__desc {
+  @include tablets {
+    margin-bottom: rem(40px);
+  }
+  @include phones {
+    max-width: 100%;
+  }
 }
 
 .promo__list-item {
@@ -48,6 +65,9 @@
 .promo__video {
   width: 47%;
   position: relative;
+  @include phones {
+    width: 100%;
+  }
 }
 
 .promo__video-button {

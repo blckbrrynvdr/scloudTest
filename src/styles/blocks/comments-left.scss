@@ -1,0 +1,148 @@
+.comments-left {
+  width: 49%;
+  position: relative;
+  @include phones {
+    width: 100%;
+    margin-bottom: rem(20px);
+  }
+}
+
+.comments-left-slider {
+  position: relative;
+  padding: rem(16px) rem(43px) rem(48px);
+  background-image: linear-gradient(left top, rgba(252,252,252,1) 0%, rgba(248,248,248,1) 43%, rgba(243,243,243,1) 100%);
+  background-color: $gray-bg;
+  min-height: rem(441px);
+  border-radius: 10px;
+  box-shadow: 1.6px 2.5px 9px 0 rgba(0, 0, 0, 0.17);
+  @include tablets {
+    padding: rem(16px) rem(30px) rem(40px);
+  }
+  &:before {
+    content: '';
+    width: rem(45px);
+    height: rem(30px);
+    background: url('../images/icons/commas.png') center center / contain no-repeat;
+    display: block;
+    position: absolute;
+    right: rem(45px);
+    top: rem(30px);
+    @include tablets {
+      right: rem(10px);
+      top: rem(10px);
+    }
+  }
+  .owl-nav {
+    display: none;
+  }
+  .owl-dots {
+    position: absolute;
+    bottom: rem(26px);
+    left: rem(43px);
+    z-index: 2;
+    @include tablets {
+      bottom: rem(8px);
+      left: rem(20px);
+    }
+  }
+  .owl-dot {
+    width: rem(14px);
+    height: rem(14px);
+    border: 1px solid $dark-gray;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: rem(6px);
+    transition: background-color .3s ease-out;
+    &.active {
+      background-color: $dark-gray;
+    }
+    @include tablets {
+      width: rem(20px);
+      height: rem(20px);
+    }
+  }
+}
+
+.comments-left-indexes {
+  @include font-bold;
+  color:$gray-light-text;
+  position: absolute;
+  bottom: rem(24px);
+  right: rem(44px);
+  z-index: 2;
+  @include tablets {
+    bottom: rem(10px);
+    right: rem(30px);
+  }
+}
+
+.comments-left-current {
+  font-size: rem(20px);
+}
+
+.comments-left-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments-left-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(14px);
+}
+
+.comments-left-avatar {
+  width: rem(92px);
+  height: rem(92px);
+  padding: rem(8px);
+  border: 1px solid $dark-gray;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: rem(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.comments-left-user {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(17px);
+}
+
+.comments-left-username {
+  @include font-bold;
+  text-transform: uppercase;
+  font-size: rem(20px);
+  margin-right: rem(9px);
+}
+
+.comments-left-play {
+  width: rem(28px);
+  height: rem(28px);
+  opacity: .6;
+  background: url('../images/icons/play-orange.png') center center / contain no-repeat;
+  transition: opacity .3s ease-out;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.comments-left-link {
+  display: flex;
+  font-size: rem(20px);
+}
+
+.comments-left-company {
+  margin-right: rem(10px);
+}
+
+.comments-left-url {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.comments-left-text {
+  line-height: 1.47;
+}

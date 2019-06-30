@@ -1,0 +1,48 @@
+.now {
+  background-color: #fff;
+  padding: rem(55px) 0;
+}
+
+.now__main-title {
+  margin-bottom: rem(52px);
+}
+
+.now__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.now__inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem(44px);
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.now__input-wrapper {
+  width: 30%;
+  @include phones {
+    width: 80%;
+    margin-bottom: rem(20px);
+  }
+}
+
+.now__input {
+  @include font-italic;
+  text-align: center;
+  width: 100%;
+  height: rem(47px);
+  border-radius: 10px;
+  border: 1px solid $gray-border;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.now__button {
+  text-align: center;
+}

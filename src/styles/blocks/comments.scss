@@ -1,0 +1,34 @@
+.comments {
+  padding: rem(70px) 0 rem(84px) 0;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    height: rem(315px);
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    bottom: 21%;
+    z-index: -1;
+    @include tablets {
+      bottom: 22.5%;
+    }
+    @include phones {
+      bottom: 6%;
+      height: rem(200px);
+    }
+  }
+}
+
+.comments__maint-title {
+  margin-bottom: rem(59px);
+}
+
+.comments__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include phones {
+    flex-direction: column;
+  }
+}

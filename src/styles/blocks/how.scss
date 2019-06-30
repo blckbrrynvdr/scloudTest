@@ -1,5 +1,8 @@
+.how {
+  padding-bottom: rem(70px);
+}
+
 .how__main-title {
-  text-align: center;
   margin-bottom: rem(43px);
 }
 
@@ -21,6 +24,10 @@
   z-index: 2; 
   display: flex;
   align-items: center;
+  cursor: pointer;
+  @include phones {
+    padding-left: 0;
+  }
   &:after {
     content: '';
     position: absolute;
@@ -53,16 +60,27 @@
   width: rem(30px);
   height: rem(30px);
   margin-right: rem(15px);
+  @include phones {
+    margin-right: rem(5px);
+  }
 }
 
 .how__desc {
   background-color: #fff;
   display: flex;
   align-items: center;
+  width: 69%;
 }
 
 .how__desc-item {
-  padding: rem(10px) rem(54px) ;
+  padding: rem(10px) rem(54px);
+  display: none;
+  &.active {
+    display: block;
+  }
+  @include phones {
+    padding: rem(10px) rem(15px);
+  }
 }
 
 .how__desc-title {

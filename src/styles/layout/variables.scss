@@ -1,25 +1,57 @@
 $black:#000000;
 $black-text: #404040;
 $orange: #ff7800;
+$orange-hover: #ff8a00;
 $opacity-orange: rgba(243, 112, 15, 0.47);
+$dark-gray: #6a6a6a;
 $gray-bg: #f8f9f6;
 $gray-light-text: #5f5f5f;
 $gray-border: #cbcbcb;
 $lighten-gray:#f3f3f3;
-$dark-gray: #6a6a6a;
 $green: #85c871;
+$overlay: rgba(0, 0, 0, 0.8);
+
+$small-desktop: 1200px;
+$tablets: 1023px;
+$phones: 480px;
+$phones-small: 375px;
+
+@mixin small-desktop{
+	@media screen and (max-width: $small-desktop) {
+		@content;
+	}
+}
+
+@mixin tablets{
+	@media screen and (max-width: $tablets) {
+		@content;
+	}
+}
+
+@mixin phones{
+	@media screen and (max-width: $phones) {
+		@content;
+	}
+}
+
+@mixin phones-small{
+	@media screen and (max-width: $phones-small) {
+		@content;
+	}
+}
 
 @mixin font-regular {
-  font-family: 'PTSans-Regular';
+  font-family: 'PTSans-Regular', Arial, sans-serif;
+  font-weight: normal;
 }
 
 @mixin font-italic {
-  font-family: 'PTSans-Italic';
+  font-family: 'PTSans-Italic', Arial, sans-serif;
   font-style: italic;
 }
 
 @mixin font-bold {
-  font-family: 'PTSans-Bold';
+  font-family: 'PTSans-Bold', Arial, sans-serif;
   font-weight: bold;
 }
 
