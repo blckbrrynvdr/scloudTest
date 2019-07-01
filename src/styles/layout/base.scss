@@ -108,6 +108,9 @@ address {
     &--big{
       line-height: rem(62px);
       padding: 0 rem(114px);
+      @include phones {
+        padding: 0 rem(90px); 
+      }
     }
     &--md {
       line-height: rem(51px);

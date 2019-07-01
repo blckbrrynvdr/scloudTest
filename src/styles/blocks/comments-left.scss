@@ -46,8 +46,9 @@
     }
   }
   .owl-dot {
-    width: rem(14px);
-    height: rem(14px);
+    min-width: rem(14px);
+    min-height: rem(14px);
+    padding: 0;
     border: 1px solid $dark-gray;
     background-color: #fff;
     border-radius: 50%;
